@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="DialogicStyle" format=3 uid="uid://vgjmcyrjnckk"]
+
+[ext_resource type="PackedScene" uid="uid://syki6k0e6aac" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.tscn" id="1_re0yx"]
+[ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_cktgn"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="3_q6ynp"]
+[ext_resource type="PackedScene" uid="uid://d2it0xiap3gnt" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn" id="4_kq08c"]
+[ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="5_co8d2"]
+
+[sub_resource type="Resource" id="Resource_w1ug2"]
+script = ExtResource("2_cktgn")
+scene = ExtResource("1_re0yx")
+
+[sub_resource type="Resource" id="Resource_b0o7p"]
+script = ExtResource("2_cktgn")
+scene = ExtResource("3_q6ynp")
+
+[sub_resource type="Resource" id="Resource_enkab"]
+script = ExtResource("2_cktgn")
+scene = ExtResource("4_kq08c")
+
+[resource]
+script = ExtResource("5_co8d2")
+name = "teks gelembung"
+layer_list = Array[String](["10", "11"])
+layer_info = {
+"": SubResource("Resource_w1ug2"),
+"10": SubResource("Resource_b0o7p"),
+"11": SubResource("Resource_enkab")
+}
+metadata/_latest_layer = ""

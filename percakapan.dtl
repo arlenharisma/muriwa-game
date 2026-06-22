@@ -1,0 +1,32 @@
+"character riri": Halo Pak Budi, saya dengar desa ini membutuhkan orang yang pandai berhitung?
+label go back
+"Pak Budi": Iya Riri, beruntung sekali ada kamu. Tadi saya bingung menghitung jumlah belanjaan saya. Saya tadi membeli wortel seharga 5.000 dan kangkung seharga 12.000. Namun karena batu hitung di desa ini hilang, saya tak tau total belanjan saya. Bisa tolong hitungkan Riri?
+[text_input var="response"]
+if {response} == "17.000":
+	"Pak Budi": Nah...., ini sesuai perkataan pedagang yang mengatakan bahwa total belanjaan saya akan lebih dari 10.000. Bagaimana itu bisa terjadi Riri?
+	"character riri": Mudah saja pak, itu sesuai dengan pertambahan bilangan positif materi bilangan bulat. Total belanjaan bisa dicari dari menambahkan 12.000 dengan 7.000 dan akan berjumlah 17.000 pak Budi
+	"Pak Budi": Benar juga ya..
+	"Pak Budi": Terima kasih Riri, akhirnya aku tak bingung lagi mengapa tadi pedagang mengtakan bahwa total belanjaanku lebih dari 10.000. Ayo lanjutkan perjalananmu dalam mencari batu hitung yang telah hilang itu!
+	"character riri": Iya Pak Budi, sama-sama, aku akan melanjutkan perjalananku
+	[wait time="3.0"]
+if {response} == "7.000":
+	"Pak Budi": Kayaknya salah deh Riri, tadi pedagang memberi tahu bahwa jumlahnya lebih dari 10.000
+	"character riri": Iyakah Pak?
+	"Pak Budi": Iya Riri, coba hitung lagi. Saya rasa kamu harus menghitung 12.000 + 5.000 karena mereka sama-sama bilangan positif. Coba pilih perkiraan ini!
+	- 17.000
+		"Pak Budi": Nah benar ini yang saya maksud
+		"Pak Budi": Bagaimana kamu bisa menghitung bahwa total belanjaan saya 17.000?
+		"character riri": Mudah saja pak, itu sesuai dengan pertambahan bilangan positif materi bilangan bulat. Total belanjaan bisa dicari dari menambahkan 12.000 dengan 7.000 dan akan berjumlah 17.000 pak Budi
+		"Pak Budi": owalah... Ternyata mudah juga. Terima kasih Riri, ayo lanjutkan perjalananmu dalam mencaru batu hitung itu!
+		"character riri": Iya sama-sama Pak, baiklah aku akan melanjutkan perjalananku
+	- 10.000
+		"Pak Budi": Masih salah Riri, kata pedagang tadi total belanjaan saya diperkirakan lebih dari 10.000
+		"character riri": Baik Pak, saya hitung dulu
+		"Pak Budi": Baiklah, coba pilih lagi opsi ini
+		- 17.000
+			"Pak Budi": Nah... Ini baru benar, bagaimana cara menghitungnya?
+			"character riri": Mudah saja pak, itu sesuai dengan pertambahan bilangan positif materi bilangan bulat. Total belanjaan bisa dicari dari menambahkan 12.000 dengan 7.000 dan akan berjumlah 17.000 pak Budi
+			"Pak Budi": oh... Terima kasih Riri, ayo lanjutkan perjalananmu dalam mencari batu hitung yang hilang itu!
+			"character riri": Sama-sama Pak, aku akan melanjutkan perjalanan selanjutnya
+		- 10.000
+			"Pak Budi": Waduh... Masih salah Riri, petunjuknya adalah lebih dari 10.00. Ayo pilih lagi opsinya dan mengulangi semua dari awal!
